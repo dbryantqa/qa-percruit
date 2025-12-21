@@ -76,37 +76,44 @@ export class StudyPage extends BasePage {
   }
 
   async clickMLEngineer(buttonText: string): Promise<void> {
-      this.MLEngineerTab
+      //this.MLEngineerTab
+      await expect(this.page.locator(this.SoftwareEngineerTab)).toHaveClass('ML Engineer')
       this.MLEngineerRoleTab
   }
 
   async clickProductManager(buttonText: string): Promise<void> {
-      this.ProductManagerTab
+      //this.ProductManagerTab
+      await expect(this.page.locator(this.SoftwareEngineerTab)).toHaveClass('Product Manager')
       this.ProductManagerRoleTab
   }
 
   async clickQAAnalyst(buttonText: string): Promise<void> {
-      this.QAAnalystTab
+      //this.QAAnalystTab
+      await expect(this.page.locator(this.SoftwareEngineerTab)).toHaveClass('QA Analyst')
       this.QAAnalystRoleTab
   }
 
   async clickCybersecurity(buttonText: string): Promise<void> {
-      this.CybersecurityTab
+      //this.CybersecurityTab
+      await expect(this.page.locator(this.SoftwareEngineerTab)).toHaveClass('Cybersecurity')
       this.CybersecurityRoleTab
   }
 
   async clickLLMs(buttonText: string): Promise<void> {
-      this.LLMsTab
+      //this.LLMsTab
+      await expect(this.page.locator(this.SoftwareEngineerTab)).toHaveClass('LLMs')
       this.LLMsRoleTab
   }
 
   async clickSQL(buttonText: string): Promise<void> {
-      this.SQLTab
+      //this.SQLTab
+      await expect(this.page.locator(this.SoftwareEngineerTab)).toHaveClass('SQL')
       this.SQLRoleTab
   }
 
   async clickBehavioral(buttonText: string): Promise<void> {
-      this.BehavioralTab
+      //this.BehavioralTab
+      await expect(this.page.locator(this.SoftwareEngineerTab)).toHaveClass('Behavioral')
       this.BehavioralRoleTab
   }
 }
